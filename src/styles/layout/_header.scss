@@ -1,0 +1,31 @@
+@use "./../foundation/global" as *;
+.l-header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: red;
+}
+.l-header__logo {
+  grid-column: 1 / 2;
+}
+.l-header__nav {
+  grid-column: 2 / 3;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.l-header__nav-item {
+  margin-left: 20px;
+}
+.l-header__nav-link {
+  color: $c-black;
+  font-size: 1.6rem;
+  font-family: $f-base;
+  min-width: 320px;
+  width: 100%;
+  overflow-x: hidden;
+  text-decoration: none;
+  transition: 0.4s;
+  &:hover {
+    text-decoration: none;
+  }
+}
